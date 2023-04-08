@@ -1188,6 +1188,9 @@ body {
     width: 300px;
     height: 40px;
   }
+  .input-mail {
+    height: 30px;
+  }
   .mail-send {
     z-index: 10;
     top: 3px;
