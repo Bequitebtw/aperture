@@ -72,3 +72,10 @@ btn_clear.addEventListener('click', () => {
     setTimeout(remove, 2000)
   }
 })
+let preloader = document.querySelector('.preloader')
+function remove() {
+  preloader.style.display = 'none'
+}
+window.onload = function () {
+  setTimeout(remove, 3000)
+}
