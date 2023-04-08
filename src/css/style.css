@@ -693,9 +693,7 @@ body {
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr) [5];
   grid-template-columns: repeat(5, 1fr);
-  -ms-grid-rows: 1fr;
   grid-template-rows: 1fr;
 }
 
