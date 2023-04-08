@@ -9,6 +9,7 @@ const arrow = document.querySelector('.back-to-top')
 const mail_send = document.querySelector('.mail-send')
 const mail_input = document.querySelector('.mail')
 const icons = document.querySelector('.footer-icons')
+
 burger.addEventListener('click', () => {
   menu.classList.toggle('display')
   btn.classList.toggle('display')
@@ -52,7 +53,16 @@ window.addEventListener('scroll', () => {
     arrow.classList.remove('active')
   }
 })
+
 function remove() {
+  preloader.style.display = 'none'
+}
+let preloader = document.querySelector('.preloader')
+window.onload = function () {
+  setTimeout(remove, 1500)
+}
+
+function remove2() {
   successfully.style.top = '-40px'
   nothing.style.opacity = '0'
   nothing.style.top = '-40px'
@@ -65,17 +75,10 @@ btn_clear.addEventListener('click', () => {
   if (input.value == '') {
     nothing.style.opacity = '1'
     nothing.style.top = '30px'
-    setTimeout(remove, 2000)
+    setTimeout(remove2, 2000)
   } else {
     input.value = ' '
     successfully.style.top = '30px'
-    setTimeout(remove, 2000)
+    setTimeout(remove2, 2000)
   }
 })
-let preloader = document.querySelector('.preloader')
-function remove() {
-  preloader.style.display = 'none'
-}
-window.onload = function () {
-  setTimeout(remove, 1500)
-}
