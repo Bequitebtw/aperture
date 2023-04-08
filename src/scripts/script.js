@@ -77,5 +77,5 @@ function remove() {
   preloader.style.display = 'none'
 }
 window.onload = function () {
-  setTimeout(remove, 2000)
+  setTimeout(remove, 1500)
 }
