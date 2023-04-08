@@ -787,6 +787,7 @@ body {
   margin: 0 auto;
   width: 100%;
   min-height: 452px;
+  max-height: 495px;
   background-color: #000000;
   padding-bottom: 20px;
 }
@@ -928,7 +929,7 @@ body {
   height: 52px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 4px;
+  padding-top: 4px;
   margin-left: 10px;
 }
 
@@ -939,7 +940,6 @@ body {
   position: relative;
   width: 350px;
   height: 40px;
-  margin-bottom: 10px;
   border: none;
   font-size: 20px;
 }
@@ -968,6 +968,10 @@ body {
   color: white;
   border: none;
   cursor: pointer;
+}
+.mail-send:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
 }
 
 .footer-box__footer {

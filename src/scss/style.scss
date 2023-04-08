@@ -568,6 +568,7 @@ body {
     margin: 0 auto;
     width: 100%;
     min-height: 452px;
+    max-height: 495px;
     background-color: #000000;
     padding-bottom: 20px;
 }
@@ -674,7 +675,7 @@ body {
     border-radius: 12px;
     height: 52px;
     box-sizing: border-box;
-    padding: 4px;
+    padding-top: 4px;
     margin-left: 10px;
 }
 .input-mail {
@@ -684,7 +685,6 @@ body {
     position: relative;
     width: 350px;
     height: 40px;
-    margin-bottom: 10px;
     border: none;
     font-size: 20px;
     &:focus {
@@ -710,6 +710,9 @@ body {
     color: white;
     border: none;
     cursor: pointer;
+    &:active {
+        transform: scale(0.98);
+    }
 }
 
 .footer-box__footer {
